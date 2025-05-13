@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC&family=Parkinsans&family=Ga+Maamli&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ysabeau SC', sans-serif;
+    color: #050344;
+    background-color: rgba(207, 204, 216, 0.6);
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+
+header {
+    width: 100%;
+    background-color: #050344;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #050344;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    display: block;
+}
+
+header select,
+nav select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+input[type="search"] {
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+main#myhome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.text-container {
+    flex: 1;
+    min-width: 280px;
+}
+
+h1 {
+    font-family: 'Ga Maamli', serif;
+    font-size: 60px;
+    color: #E91E63;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 30px;
+    color: #050344;
+    margin: 10px 0;
+}
+p {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    color: #333;
+}
+
+#myhome img {
+    margin-left: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.home-img {
+    float: right;
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    object-fit: cover;
+}
+
+/* FORMS */
+.form-container {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #E91E63;
+    width: 100%;
+    display: block;
+}
+.form-container h1 {
+    text-align: center;
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input[type="text"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    border: none;
+    padding: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #050344;
+}
+
+form label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #050344;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.file-upload-container small,
+.image-size-text {
+    font-size: 12px;
+    color: gray;
+    flex-grow: 1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-btn,
+.clear-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+    border-radius: 5%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-btn {
+    background-color: #E91E63;
+    color: white;
+    border: none;
+}
+
+.clear-btn {
+    background-color: white;
+    color: #E91E63;
+    border: 2px solid #E91E63;
+}
+
+.submit-btn:hover {
+    background-color: #050344;
+    color: #E91E63;
+}
+
+.clear-btn:hover {
+    background-color: #E91E63;
+    color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.game-image {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.image-container img {
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.game-table {
+    width: 100%;
+    max-width: 50%;
+}
+.image-container {
+    flex: 1;
+    max-width: 45%;
+}
+
+.table-container {
+    flex: 1;
+    max-width: 50%;
+    overflow-x: auto;
+}
+
+.game-table th {
+    background-color: #E91E63;
+    color: black;
+    padding: 10px;
+}
+
+.game-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: right;
+}
+.discover-title {
+    text-align: center;
+    color: #E91E63;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Ysabeau SC', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.gallery-h1 {
+    text-align: center;
+    color: #E91E63;
+    font-size: 35px;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 700;
+    margin: 20px auto;
+}
+.gallery-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 230px;
+    height: 300px;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.gallery-description {
+    font-size: 16px;
+    color: #333;
+    max-width: 1200px;
+    margin: 10px auto 30px auto;
+    line-height: 1.0;
+}
+.details-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.details-container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.details-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.info-item p {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0b0450;
+}
+
+.material-icons {
+    font-size: 32px;
+    color: #0b0450;
+}
+
+.game-title {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #E91E63;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.game-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #050344;
+    color: white;
+    width: 100%;
+}
